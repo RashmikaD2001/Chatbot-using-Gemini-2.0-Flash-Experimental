@@ -1,6 +1,10 @@
 import pyttsx3
+import re
 
 def text_to_speech(text):
+    # Remove unwanted punctuation marks
+    cleaned_text = re.sub(r'[^\w\s.,!?]', '', text)
+
     # Initialize the text-to-speech engine
     engine = pyttsx3.init()
     
@@ -12,5 +16,6 @@ def text_to_speech(text):
     engine.setProperty('voice', voices[0].id)  # Change index for different voices
 
     # Convert text to speech
-    engine.say(text)
+    engine.say(cleaned_text)
     engine.runAndWait()
+    
