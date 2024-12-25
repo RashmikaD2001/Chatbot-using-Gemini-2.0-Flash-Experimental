@@ -4,30 +4,24 @@ This project is a chatbot that provides career guidance for university students.
 
 ### Features
 
-Career Guidance: Provides tailored career advice for university students.
+Career Guidance: Provides tailored career advice for university students. Text-to-Speech: Converts chatbot responses into speech for better accessibility. Interactive Chat Session: Users can interact with the chatbot in real-time. Exit Confirmation: Ensures the user confirms before exiting the chat.
 
-Text-to-Speech: Converts chatbot responses into speech for better accessibility.
+### Prerequisites
 
-Interactive Chat Session: Users can interact with the chatbot in real-time.
+1. Python 3.9 or later
 
-Exit Confirmation: Ensures the user confirms before exiting the chat.
+2. An API key for Google Generative AI
 
-Prerequisites
+3. pyttsx3 library for text-to-speech functionality
 
-Python 3.9 or later
-
-An API key for Google Generative AI
-
-pyttsx3 library for text-to-speech functionality
-
-python-dotenv library for managing environment variables
+4. python-dotenv library for managing environment variables
 
 
-🚀 Clone the repository:
+### 🚀 Clone the repository:
 
     git clone https://github.com/your-username/chatbot-career-guidance.git
 
-💻 Usage
+### 💻 Usage
 
   Run the chatbot:
     
