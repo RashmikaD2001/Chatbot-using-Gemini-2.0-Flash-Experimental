@@ -43,10 +43,10 @@ while True:
     
     print('\n')
 
-    if user_input.lower == 'y':
+    if user_input.lower() == 'y':
         user_input = input("type 'confirm' to exit: ")
 
-        if user_input.lower == 'confirm':
+        if user_input.lower() == 'confirm':
             break
         
     else:
@@ -61,3 +61,5 @@ while True:
 
         chat_session.history.append({"role": "user", "parts": [user_input]})
         chat_session.history.append({"role": "model", "parts": [model_response]})
+
+print('Thank you for using my chatbot')
